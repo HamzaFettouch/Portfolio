@@ -11,7 +11,7 @@ section {
 }
 
 body {
-    background-color: #0a192f; /* Azul oscuro con un tono suave y profesional */
+    background-color: #0a192f;
     color: #ffffff;
 }
 
@@ -162,12 +162,12 @@ body {
 
 .about-img {
     display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente */
+    justify-content: center;
 }
 
 .about-img img {
-    max-width: 100%; /* Asegura que la imagen se adapte al contenedor */
-    width: 50%; /* Ajusta el ancho de la imagen dentro de la columna */
+    max-width: 100%;
+    width: 50%; 
     border-radius: 8px;
 }
 
@@ -270,7 +270,6 @@ body {
     margin: 35px 0;
 }
 
-/* Información de la habilidad (nombre e ícono) */
 .Technical-bars .bar .info {
     display: flex;
     align-items: center;
@@ -278,54 +277,50 @@ body {
 }
 
 .Technical-bars .bar .info span {
-    font-size: 20px; /* Texto más grande */
+    font-size: 20px; 
     font-weight: 600;
     color: #0ef;
     margin-left: 10px;
 }
 
-/* Línea de progreso */
 .Technical-bars .bar .progress-line {
     position: relative;
     border-radius: 10px;
     width: 100%;
-    height: 8px; /* Más alto para mejor visibilidad */
+    height: 8px; 
     background-color: #000;
 }
 
-/* Indicador de progreso con animación */
 .Technical-bars .bar .progress-line span {
     display: block;
     height: 100%;
     background-color: #0ef;
     border-radius: 10px;
-    width: 0; /* Comienza en 0 para animación */
-    transition: width 1s ease; /* Animación de la barra */
+    width: 0; 
+    transition: width 1s ease; 
     position: relative;
 }
 
-/* Mostrar porcentaje al final de la barra */
+
 .Technical-bars .bar .progress-line span::after {
-    content: attr(data-width); /* Muestra el porcentaje almacenado en data-width */
+    content: attr(data-width);
     position: absolute;
-    top: -25px; /* Ajustado para mejor visibilidad */
+    top: -25px; 
     right: 0;
     background-color: #000;
     color: #fff;
-    padding: 3px 8px; /* Tamaño más grande */
-    font-size: 16px; /* Texto más grande */
+    padding: 3px 8px;
+    font-size: 16px;
     border-radius: 5px;
     transform: translateX(50%);
 }
 
-/* Porcentajes específicos para cada habilidad */
 .progress-line.html span { width: 80%; }
 .progress-line.css span { width: 70%; }
 .progress-line.js span { width: 60%; }
 .progress-line.cpp span { width: 85%; }
 .progress-line.java span { width: 85%; }
 
-/* Clase que activa la animación */
 .animado .progress-line span { transition: width 1s ease; }
 
 .radial-bars{
@@ -496,7 +491,6 @@ body {
     }
 }
 
-/* Sección Projects */
 #portfolio {
     padding: 100px 0;
     background-color: #0a192f;
@@ -513,7 +507,6 @@ body {
     color: #0ef;
 }
 
-/* Contenedor de los proyectos */
 .portfolio-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -524,7 +517,6 @@ body {
     margin: auto;
 }
 
-/* Cada proyecto */
 .row {
     position: relative;
     overflow: hidden;
@@ -532,7 +524,7 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 300px; /* Altura fija para uniformidad */
+    height: 300px; 
 }
 
 .row:hover {
@@ -542,24 +534,24 @@ body {
 
 .row img {
     width: 100%;
-    height: 100%; /* Asegura que ocupe toda la altura del contenedor */
-    object-fit: cover; /* Recorta la imagen si es necesario para que llene el espacio */
+    height: 100%; 
+    object-fit: cover;
     border-radius: 8px;
     transition: transform 0.5s ease;
 }
 
 .row:hover img {
-    transform: scale(1.1); /* Zoom en la imagen al pasar el cursor */
+    transform: scale(1.1);
 }
 
-/* Superposición (overlay) con explicación del proyecto */
+
 .layer {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.75); /* Fondo oscuro para legibilidad */
+    background: rgba(0, 0, 0, 0.75);
     color: #fff;
     opacity: 0;
     display: flex;
@@ -590,7 +582,6 @@ body {
     max-width: 80%;
 }
 
-/* Ajustes responsive */
 @media (max-width: 768px) {
     #portfolio h2 {
         font-size: 40px;
@@ -605,12 +596,12 @@ body {
     }
 
     .row {
-        height: 250px; /* Reduce la altura en pantallas más pequeñas */
+        height: 250px;
     }
 }
 
 
-/* Diseño responsive para dispositivos de pantalla media */
+
 @media (max-width: 1024px) {
     .skills-container {
         max-width: 1000px;
@@ -633,7 +624,6 @@ body {
     }
 }
 
-/* Diseño responsive para dispositivos de pantalla pequeña (tabletas y móviles) */
 @media (max-width: 768px) {
     .skills-container {
         flex-direction: column;
@@ -684,7 +674,7 @@ body {
     }
 
     .portfolio-content {
-        grid-template-columns: 1fr; /* Coloca las imágenes en una sola columna */
+        grid-template-columns: 1fr;
         gap: 15px;
     }
 
@@ -694,7 +684,6 @@ body {
 
 }
 
-/* Diseño responsive para pantallas muy pequeñas (móviles) */
 @media (max-width: 480px) {
     .Technical-bars .bar .info span {
         font-size: 16px;
@@ -732,7 +721,6 @@ body {
 
 
 
-/* Estilos de la sección Education */
 .education {
     padding: 100px 0;
     text-align: center;
@@ -792,7 +780,6 @@ body {
     color: #b0bec5;
 }
 
-/* Responsive adjustments for Education section */
 @media (max-width: 768px) {
     .education-content h2 {
         font-size: 40px;
@@ -812,7 +799,6 @@ body {
 }
 
 
-/* Estilos de la sección Contact */
 .contact {
     padding: 100px 0;
     background-color: #081b29;
@@ -872,7 +858,6 @@ body {
     color: #b0bec5;
 }
 
-/* Responsive adjustments for Contact section */
 @media (max-width: 768px) {
     .contact h2 {
         font-size: 40px;
@@ -891,7 +876,6 @@ body {
     }
 }
 
-/* Sección de contacto */
 .contact {
     display: flex;
     flex-wrap: wrap;
@@ -904,7 +888,6 @@ body {
     text-align: left;
 }
 
-/* Títulos y texto de contacto */
 .contact-text h2 {
     font-size: 48px;
     color: #fff;
@@ -928,7 +911,6 @@ body {
     max-width: 400px;
 }
 
-/* Información de contacto */
 .contact-info ul {
     list-style: none;
     padding: 0;
@@ -947,7 +929,6 @@ body {
     margin-right: 10px;
 }
 
-/* Iconos de redes sociales */
 .contact-icons a {
     color: #0ef;
     font-size: 24px;
@@ -959,7 +940,6 @@ body {
     color: #ffffff;
 }
 
-/* Formulario de contacto */
 .contact-form {
     flex: 1;
     max-width: 500px;
