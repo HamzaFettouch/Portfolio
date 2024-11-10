@@ -582,144 +582,6 @@ body {
     max-width: 80%;
 }
 
-@media (max-width: 768px) {
-    #portfolio h2 {
-        font-size: 40px;
-    }
-
-    .layer h5 {
-        font-size: 20px;
-    }
-
-    .layer p {
-        font-size: 14px;
-    }
-
-    .row {
-        height: 250px;
-    }
-}
-
-
-
-@media (max-width: 1024px) {
-    .skills-container {
-        max-width: 1000px;
-        gap: 20px;
-        padding: 20px;
-    }
-    
-    .Technical-bars {
-        max-width: 100%;
-    }
-    
-    .radial-bars .radial-bar {
-        width: 180px;
-        height: 180px;
-    }
-    
-    .radial-bars .radial-bar svg {
-        width: 140px;
-        height: 140px;
-    }
-}
-
-@media (max-width: 768px) {
-    .skills-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .Technical-bars,
-    .radial-bars {
-        max-width: 100%;
-        margin: 0;
-    }
-    
-    .container1 {
-        width: 100%;
-        padding: 20px;
-    }
-    
-    .Technical-bars .bar .info span {
-        font-size: 18px;
-    }
-    
-    .Technical-bars .bar .progress-line {
-        height: 6px;
-    }
-    
-    .Technical-bars .bar .progress-line span::after {
-        font-size: 14px;
-        top: -20px;
-        padding: 2px 6px;
-    }
-    
-    .radial-bars .radial-bar {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .radial-bars .radial-bar svg {
-        width: 120px;
-        height: 120px;
-    }
-    
-    .radial-bar .percentage {
-        font-size: 16px;
-    }
-    
-    .radial-bar .text {
-        font-size: 14px;
-    }
-
-    .portfolio-content {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .main-text h2 {
-        font-size: 40px;
-    }
-
-}
-
-@media (max-width: 480px) {
-    .Technical-bars .bar .info span {
-        font-size: 16px;
-    }
-    
-    .Technical-bars .bar .progress-line {
-        height: 5px;
-    }
-    
-    .Technical-bars .bar .progress-line span::after {
-        font-size: 12px;
-        top: -18px;
-        padding: 2px 5px;
-    }
-    
-    .radial-bars .radial-bar {
-        width: 120px;
-        height: 120px;
-    }
-    
-    .radial-bars .radial-bar svg {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .radial-bar .percentage {
-        font-size: 14px;
-    }
-    
-    .radial-bar .text {
-        font-size: 12px;
-    }
-}
-
-
-
 
 .education {
     padding: 100px 0;
@@ -778,24 +640,6 @@ body {
 .education-box p {
     font-size: 16px;
     color: #b0bec5;
-}
-
-@media (max-width: 768px) {
-    .education-content h2 {
-        font-size: 40px;
-    }
-    
-    .education-box h3 {
-        font-size: 18px;
-    }
-    
-    .education-box h4 {
-        font-size: 20px;
-    }
-    
-    .education-box p {
-        font-size: 14px;
-    }
 }
 
 
@@ -858,23 +702,6 @@ body {
     color: #b0bec5;
 }
 
-@media (max-width: 768px) {
-    .contact h2 {
-        font-size: 40px;
-    }
-    
-    .contact-box h3 {
-        font-size: 18px;
-    }
-    
-    .contact-box h4 {
-        font-size: 20px;
-    }
-    
-    .contact-box p {
-        font-size: 14px;
-    }
-}
 
 .contact {
     display: flex;
@@ -987,7 +814,114 @@ body {
     background-color: #08c;
 }
 
+@media (max-width: 1024px) {
+    .skills-container {
+        max-width: 1000px;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .Technical-bars {
+        max-width: 100%;
+    }
+
+    .radial-bars .radial-bar {
+        width: 180px;
+        height: 180px;
+    }
+
+    .radial-bars .radial-bar svg {
+        width: 140px;
+        height: 140px;
+    }
+
+    .about {
+        padding: 80px 5%;
+        grid-template-columns: 1fr;
+    }
+
+    .home-content h1 {
+        font-size: 48px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .sub-title {
+        font-size: 50px;
+    }
+
+    .portfolio-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Technical-bars,
+    .radial-bars,
+    .container1 {
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .Technical-bars .bar .info span,
+    .contact-info li,
+    .about-text p {
+        font-size: 18px;
+    }
+
+    .Technical-bars .bar .progress-line {
+        height: 6px;
+    }
+
+    .Technical-bars .bar .progress-line span::after {
+        font-size: 14px;
+        top: -20px;
+        padding: 2px 6px;
+    }
+
+    .radial-bars .radial-bar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .radial-bars .radial-bar svg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .radial-bar .percentage,
+    .education-box h4,
+    .contact-box h4 {
+        font-size: 16px;
+    }
+
+    .portfolio-content {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .main-text h2,
+    .education-content h2,
+    .contact h2 {
+        font-size: 40px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
     .contact {
         flex-direction: column;
         align-items: center;
@@ -999,6 +933,53 @@ body {
 
     .contact-text h4 {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Technical-bars .bar .info span,
+    .education-box h3,
+    .contact-box h3 {
+        font-size: 16px;
+    }
+
+    .Technical-bars .bar .progress-line {
+        height: 5px;
+    }
+
+    .Technical-bars .bar .progress-line span::after {
+        font-size: 12px;
+        top: -18px;
+        padding: 2px 5px;
+    }
+
+    .radial-bars .radial-bar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .radial-bars .radial-bar svg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .radial-bar .percentage,
+    .radial-bar .text,
+    .about-text h4,
+    .contact-box p {
+        font-size: 14px;
+    }
+
+    .sub-title {
+        font-size: 36px;
+    }
+
+    .portfolio-content .row {
+        height: 200px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
     }
 }
 
